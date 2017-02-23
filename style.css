@@ -4,3 +4,7 @@ body {
     color: yellow;
     background-color: dodgerblue;
 }
+
+section {
+  background-color: transparent;
+}
