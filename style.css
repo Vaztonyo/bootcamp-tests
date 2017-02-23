@@ -3,8 +3,7 @@ body {
     font-weight: inherit;
     color: yellow;
     background-color: dodgerblue;
-}
-
-section {
-  background-color: transparent;
+    border: double;
+    border-width: thick;
+    border-color: black;
 }
