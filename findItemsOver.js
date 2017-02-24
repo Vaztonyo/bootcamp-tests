@@ -1,11 +1,12 @@
 function findItemsOver(list, limit){
   var itemOver25 = [];
   var price1 = 0;
-  for (i in list){
-    if (list[i].price > limit){
-      itemOver25.push(list[i])
+
+  list.forEach(function(item){
+    if (item.price > limit){
+      itemOver25.push(item)
     }
-  }
+  });
    return itemOver25;
 };
 

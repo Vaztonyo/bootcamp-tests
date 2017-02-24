@@ -2,14 +2,15 @@ function mostProfitableDepartment(data){
   var NumOfSales = 0;
   var depart = [];
 
-  for (i in data){
-   if(data[i].sales > NumOfSales){
-     NumOfSales = data[i].sales;
-     depart = data[i];
+  data.forEach(function(item){
+   if(item.sales > NumOfSales){
+     NumOfSales = item.sales;
+     depart = item;
    }
- }
+ });
+ console.log(depart.department)
  return depart.department;
-}
+};
 
 var salesData = [
     {department : 'hardware', sales : 4500, day : 'Monday'},
@@ -28,3 +29,5 @@ var salesData = [
     {department : 'outdoor', sales : 12006, day : 'Friday'},
     {department : 'carpentry', sales : 16109, day : 'Friday'},
 ];
+
+mostProfitableDepartment(salesData);
