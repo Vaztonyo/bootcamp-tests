@@ -3,6 +3,6 @@ describe('the most profitable department', function(){
     assert.equal('outdoor', mostProfitableDepartment(salesData));
   });
   it('should find the department that is most profitable', function(){
-    assert.equal('outdoor', mostProfitableDepartment(sales));
+    assert.equal('outdoor', mostProfitableDepartment(salesData));
   });
 });
